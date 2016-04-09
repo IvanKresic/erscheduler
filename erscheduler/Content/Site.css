@@ -15,3 +15,20 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.navbar-inverse {
+    background-color: #101724;
+    border-color: #101724;
+    padding: 8px;
+}
+
+.body-content {
+    background-color:#ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.login{
+    
+}

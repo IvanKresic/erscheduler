@@ -36,6 +36,16 @@ summary {
   display: block;
 }
 
+/*---------------------------------------------------------------*/
+
+#header {
+    margin: 0;
+	height: 75px;
+	background-color: #101724;
+}
+
+
+
 audio,
 canvas,
 video {
