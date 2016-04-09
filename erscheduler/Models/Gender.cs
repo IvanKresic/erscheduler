@@ -9,5 +9,6 @@ namespace erscheduler.Models
     {
         public int Gender_ID { get; set; }
         public string Gender_Type { get; set; }
+
     }
 }
