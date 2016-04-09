@@ -11,5 +11,10 @@ namespace erscheduler.Models
         public string EmergencyAmbulance { get; set; }
         public int OIB { get; set; }
 
+
+
+
+
+
     }
 }
