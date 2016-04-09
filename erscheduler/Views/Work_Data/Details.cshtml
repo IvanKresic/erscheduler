@@ -1,0 +1,42 @@
+﻿@model erscheduler.Models.Work_Data
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Work_Data</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Shift_Date_End)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Shift_Date_End)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Shift_Time_End)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Shift_Time_End)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Working_Hours)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Working_Hours)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Work_Data_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

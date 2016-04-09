@@ -1,0 +1,45 @@
+﻿@model IEnumerable<erscheduler.Models.Work_Data>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Shift_Date_End)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Shift_Time_End)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Working_Hours)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Shift_Date_End)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Shift_Time_End)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Working_Hours)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Work_Data_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Work_Data_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Work_Data_ID })
+        </td>
+    </tr>
+}
+
+</table>
