@@ -199,6 +199,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Branchess.cs" />
     <Compile Include="Models\Worker.cs" />
     <Compile Include="Models\erschedulerContext.cs" />
     <Compile Include="Models\Gender.cs" />
