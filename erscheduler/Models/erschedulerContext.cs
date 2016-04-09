@@ -20,5 +20,11 @@ namespace erscheduler.Models
         }
 
         public System.Data.Entity.DbSet<erscheduler.Models.Worker> Worker { get; set; }
+
+        public System.Data.Entity.DbSet<erscheduler.Models.PlaceOfLiving> PlaceOfLivings { get; set; }
+
+        public System.Data.Entity.DbSet<erscheduler.Models.Employees> Employees { get; set; }
+
+        public System.Data.Entity.DbSet<erscheduler.Models.Work_Data> Work_Data { get; set; }
     }
 }

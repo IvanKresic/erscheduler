@@ -193,12 +193,18 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\EmployeesController.cs" />
+    <Compile Include="Controllers\PlaceOfLivingsController.cs" />
     <Compile Include="Controllers\WorkerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\Work_DataController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Branchess.cs" />
+    <Compile Include="Models\Employees.cs" />
+    <Compile Include="Models\PlaceOfLiving.cs" />
     <Compile Include="Models\Worker.cs" />
     <Compile Include="Models\erschedulerContext.cs" />
     <Compile Include="Models\Gender.cs" />
@@ -266,6 +272,21 @@
     <Content Include="Views\Worker\Details.cshtml" />
     <Content Include="Views\Worker\Edit.cshtml" />
     <Content Include="Views\Worker\Index.cshtml" />
+    <Content Include="Views\PlaceOfLivings\Create.cshtml" />
+    <Content Include="Views\PlaceOfLivings\Delete.cshtml" />
+    <Content Include="Views\PlaceOfLivings\Details.cshtml" />
+    <Content Include="Views\PlaceOfLivings\Edit.cshtml" />
+    <Content Include="Views\PlaceOfLivings\Index.cshtml" />
+    <Content Include="Views\Employees\Create.cshtml" />
+    <Content Include="Views\Employees\Delete.cshtml" />
+    <Content Include="Views\Employees\Details.cshtml" />
+    <Content Include="Views\Employees\Edit.cshtml" />
+    <Content Include="Views\Employees\Index.cshtml" />
+    <Content Include="Views\Work_Data\Create.cshtml" />
+    <Content Include="Views\Work_Data\Delete.cshtml" />
+    <Content Include="Views\Work_Data\Details.cshtml" />
+    <Content Include="Views\Work_Data\Edit.cshtml" />
+    <Content Include="Views\Work_Data\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
