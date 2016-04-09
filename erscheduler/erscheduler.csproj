@@ -193,14 +193,15 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Controllers\DjelatniksController.cs" />
+    <Compile Include="Controllers\WorkerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Djelatnik.cs" />
+    <Compile Include="Models\Worker.cs" />
     <Compile Include="Models\erschedulerContext.cs" />
+    <Compile Include="Models\Gender.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -259,11 +260,11 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
-    <Content Include="Views\Djelatniks\Create.cshtml" />
-    <Content Include="Views\Djelatniks\Delete.cshtml" />
-    <Content Include="Views\Djelatniks\Details.cshtml" />
-    <Content Include="Views\Djelatniks\Edit.cshtml" />
-    <Content Include="Views\Djelatniks\Index.cshtml" />
+    <Content Include="Views\Worker\Create.cshtml" />
+    <Content Include="Views\Worker\Delete.cshtml" />
+    <Content Include="Views\Worker\Details.cshtml" />
+    <Content Include="Views\Worker\Edit.cshtml" />
+    <Content Include="Views\Worker\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
