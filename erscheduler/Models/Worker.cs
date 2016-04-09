@@ -5,8 +5,9 @@ using System.Web;
 
 namespace erscheduler.Models
 {
-    public class Djelatnik
+    public class Worker
     {
+        
         public int ID { get; set; }
         public int OIB { get; set; }
         public string  Name { get; set; }

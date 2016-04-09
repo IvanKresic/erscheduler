@@ -10,14 +10,14 @@ using erscheduler.Models;
 
 namespace erscheduler.Controllers
 {
-    public class DjelatniksController : Controller
+    public class WorkerController : Controller
     {
         private erschedulerContext db = new erschedulerContext();
 
         // GET: Djelatniks
         public ActionResult Index()
         {
-            return View(db.Djelatniks.ToList());
+            return View(db.Worker.ToList());
         }
 
         // GET: Djelatniks/Details/5
@@ -27,7 +27,7 @@ namespace erscheduler.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Djelatnik djelatnik = db.Djelatniks.Find(id);
+            Worker djelatnik = db.Worker.Find(id);
             if (djelatnik == null)
             {
                 return HttpNotFound();
@@ -46,11 +46,11 @@ namespace erscheduler.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,OIB,Name,Surname,Birth_Date,Adress,Hometown,Home_Telephone,Mobile_Phone,Note")] Djelatnik djelatnik)
+        public ActionResult Create([Bind(Include = "ID,OIB,Name,Surname,Birth_Date,Adress,Hometown,Home_Telephone,Mobile_Phone,Note")] Worker djelatnik)
         {
             if (ModelState.IsValid)
             {
-                db.Djelatniks.Add(djelatnik);
+                db.Worker.Add(djelatnik);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -65,7 +65,7 @@ namespace erscheduler.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Djelatnik djelatnik = db.Djelatniks.Find(id);
+            Worker djelatnik = db.Worker.Find(id);
             if (djelatnik == null)
             {
                 return HttpNotFound();
@@ -78,7 +78,7 @@ namespace erscheduler.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,OIB,Name,Surname,Birth_Date,Adress,Hometown,Home_Telephone,Mobile_Phone,Note")] Djelatnik djelatnik)
+        public ActionResult Edit([Bind(Include = "ID,OIB,Name,Surname,Birth_Date,Adress,Hometown,Home_Telephone,Mobile_Phone,Note")] Worker djelatnik)
         {
             if (ModelState.IsValid)
             {
@@ -96,7 +96,7 @@ namespace erscheduler.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Djelatnik djelatnik = db.Djelatniks.Find(id);
+            Worker djelatnik = db.Worker.Find(id);
             if (djelatnik == null)
             {
                 return HttpNotFound();
@@ -109,8 +109,8 @@ namespace erscheduler.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Djelatnik djelatnik = db.Djelatniks.Find(id);
-            db.Djelatniks.Remove(djelatnik);
+            Worker djelatnik = db.Worker.Find(id);
+            db.Worker.Remove(djelatnik);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

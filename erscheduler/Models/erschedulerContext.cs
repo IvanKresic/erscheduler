@@ -19,6 +19,6 @@ namespace erscheduler.Models
         {
         }
 
-        public System.Data.Entity.DbSet<erscheduler.Models.Djelatnik> Djelatniks { get; set; }
+        public System.Data.Entity.DbSet<erscheduler.Models.Worker> Worker { get; set; }
     }
 }
